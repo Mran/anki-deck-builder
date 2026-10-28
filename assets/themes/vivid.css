@@ -1,0 +1,48 @@
+/* vivid — 明快的紫粉渐变强调与大圆角,活泼有趣;适合语言学习、青少年、碎片化复习 */
+.card {
+  --bg: #f6f2ff;
+  --surface: #ffffff;
+  --surface-2: #f4effd;
+  --text: #241a3a;
+  --text-muted: #75699a;
+  --border: #e9e1fa;
+  --accent: #7c3aed;
+  --accent-soft: #efe6ff;
+  --accent-contrast: #ffffff;
+  --correct: #0f8a5f;
+  --correct-soft: #dcf7ec;
+  --wrong: #d1335b;
+  --wrong-soft: #ffe3ea;
+  --cloze: #c026d3;
+  --cloze-soft: #fbe5fd;
+  --font-body: "Nunito", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-heading: var(--font-body);
+  --font-mono: "JetBrains Mono", Consolas, monospace;
+  --font-size: 20px;
+  --line-height: 1.6;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 0 10px 30px -10px rgba(124,58,237,.25);
+  --max-width: 660px;
+  --gap: 16px;
+}
+.card.nightMode, .nightMode .card, .card.night_mode, .night_mode .card {
+  --bg: #17121f;
+  --surface: #211a2d;
+  --surface-2: #2c2340;
+  --text: #efe9fb;
+  --text-muted: #a99cc6;
+  --border: #3a2f52;
+  --accent: #b794ff;
+  --accent-soft: #352653;
+  --accent-contrast: #17121f;
+  --correct: #5ee0a8;
+  --correct-soft: #173528;
+  --wrong: #ff8fa8;
+  --wrong-soft: #40202b;
+  --cloze: #f08cff;
+  --cloze-soft: #3f2147;
+  --shadow: none;
+}
+/* vivid 的问题区加一点渐变色条 */
+.ak-q { border-left: 4px solid; border-image: linear-gradient(180deg, #7c3aed, #ec4899) 1; padding-left: 12px; }

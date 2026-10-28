@@ -1,0 +1,2 @@
+{"type": "cloze", "cloze": true, "fields": ["Text", "Extra", "Source"],
+ "templates": [{"name": "[[t:name_cloze]]", "front": "front.html", "back": "back.html"}]}

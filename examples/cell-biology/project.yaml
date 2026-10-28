@@ -1,0 +1,24 @@
+name: 细胞生物学
+uid: c6e1e2551003
+lang: zh
+theme: minimal
+card_types:
+- basic
+- cloze
+- mcq
+- truefalse
+- typein
+- reversed
+sources:
+- path: sources/cell.md
+  origin: cell.docx
+  kind: docx
+  added: '2026-10-28'
+- path: sources/cell-2.md
+  origin: cell.pptx
+  kind: pptx
+  added: '2026-10-28'
+- path: sources/sub.md
+  origin: sub.srt
+  kind: subtitles
+  added: '2026-10-28'

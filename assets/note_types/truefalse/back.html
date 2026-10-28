@@ -1,0 +1,13 @@
+<div class="ak ak-tf" data-side="back">
+  <div class="ak-kind">[[t:kind_tf]]</div>
+  <div class="ak-statement">{{Statement}}</div>
+  <div class="ak-tf-btns" id="answer">
+    <div class="ak-tf-btn" data-v="1"><span class="ak-tf-icon">✓</span>[[t:true]]</div>
+    <div class="ak-tf-btn" data-v="0"><span class="ak-tf-icon">✗</span>[[t:false]]</div>
+  </div>
+  <div class="ak-verdict"></div>
+  {{#Explanation}}<div class="ak-extra"><span class="ak-extra-label">[[t:explanation]]</span>{{Explanation}}</div>{{/Explanation}}
+  {{#Source}}<div class="ak-source">{{Source}}</div>{{/Source}}
+  <div class="ak-data" style="display:none"><div class="ak-raw-ans">{{text:Answer}}</div></div>
+</div>
+<script>[[include:tf.js]]</script>

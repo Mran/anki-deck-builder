@@ -1,0 +1,2 @@
+{"type": "typein", "fields": ["Front", "Answer", "Extra", "Source"],
+ "templates": [{"name": "[[t:name_typein]]", "front": "front.html", "back": "back.html"}]}

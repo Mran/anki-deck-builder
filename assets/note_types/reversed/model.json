@@ -1,0 +1,4 @@
+{"type": "reversed", "fields": ["Front", "Back", "Extra", "Source"],
+ "templates": [
+   {"name": "[[t:tpl_forward]]", "front": "front.html", "back": "back.html"},
+   {"name": "[[t:tpl_backward]]", "front": "front2.html", "back": "back2.html"}]}

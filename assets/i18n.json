@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "kind_basic": "问答", "kind_reversed": "双向", "kind_cloze": "填空", "kind_mcq": "选择题",
+    "kind_tf": "判断题", "kind_type": "输入答案",
+    "name_basic": "翻转卡", "name_reversed": "双向卡", "name_cloze": "填空卡", "name_mcq": "选择题",
+    "name_truefalse": "判断题", "name_typein": "输入答案卡",
+    "tpl_forward": "正向", "tpl_backward": "反向",
+    "select_one": "选择一个答案,然后翻面", "select_all": "多选题:选出所有正确项,然后翻面",
+    "true": "对", "false": "错", "correct": "回答正确", "wrong": "回答错误",
+    "answer_is": "正确答案", "explanation": "解析", "type_hint": "输入答案后翻面核对"
+  },
+  "en": {
+    "kind_basic": "Q & A", "kind_reversed": "Reverse", "kind_cloze": "Cloze", "kind_mcq": "Multiple choice",
+    "kind_tf": "True / False", "kind_type": "Type in",
+    "name_basic": "Basic", "name_reversed": "Basic (reversed)", "name_cloze": "Cloze", "name_mcq": "Multiple choice",
+    "name_truefalse": "True-False", "name_typein": "Type answer",
+    "tpl_forward": "Forward", "tpl_backward": "Backward",
+    "select_one": "Pick one, then flip", "select_all": "Select all that apply, then flip",
+    "true": "True", "false": "False", "correct": "Correct", "wrong": "Incorrect",
+    "answer_is": "Answer", "explanation": "Explanation", "type_hint": "Type your answer, then flip"
+  }
+}

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: pptx-to-flip-and-mcq
+expected_outcome: |
+  An importable .apkg containing basic flip cards and multiple-choice cards (more MCQ than flip) covering the lecture's TCP content including speaker notes, with plausible distractors, explanations, and a clean style that works in night mode.
+context:
+  scaffold_script: place-files.sh

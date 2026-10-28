@@ -1,0 +1,60 @@
+cards:
+  - id: k001-basic
+    point: k001
+    type: basic
+    deck: 细胞器
+    fields:
+      Front: 被称为<b>"细胞的动力工厂"</b>的细胞器是?
+      Back: 线粒体
+      Extra: 双层膜,内膜向内折叠形成<b>嵴</b>,增大酶附着面积。
+      Source: 必修一 3.2
+  - id: k002-cloze
+    point: k002
+    type: cloze
+    deck: 细胞器
+    fields:
+      Text: 光合作用的光反应发生在{{c1::类囊体薄膜}}上,暗反应发生在{{c2::叶绿体基质::位置}}中。
+      Extra: 光反应为暗反应提供 ATP 和 NADPH。
+  - id: k001-mcq
+    point: k001
+    type: mcq
+    deck: 细胞器
+    fields:
+      Question: 细胞进行有氧呼吸的主要场所是?
+      Options: [叶绿体, 线粒体, 核糖体, 高尔基体]
+      Answer: B
+      Explanation: 叶绿体是光合作用场所;核糖体合成蛋白质;高尔基体负责加工、分类和包装蛋白质。
+      Source: 必修一 3.2
+  - id: k003-mcq
+    point: k003
+    type: mcq
+    deck: 细胞器
+    fields:
+      Question: 下列细胞器中含有 DNA 的是?(多选)
+      Options: [线粒体, 核糖体, 叶绿体, 内质网]
+      Answer: A,C
+      Shuffle: true
+      Explanation: 线粒体和叶绿体都是半自主性细胞器,含有少量 DNA 和核糖体。
+  - id: k001-tf
+    point: k001
+    type: truefalse
+    deck: 细胞器
+    fields:
+      Statement: 所有细胞都含有线粒体。
+      Answer: false
+      Explanation: 原核细胞没有线粒体;哺乳动物成熟红细胞也没有。
+  - id: k004-type
+    point: k004
+    type: typein
+    deck: 术语
+    fields:
+      Front: 线粒体的英文(单数)
+      Answer: mitochondrion
+      Extra: 复数 mitochondria
+  - id: k004-rev
+    point: k004
+    type: reversed
+    deck: 术语
+    fields:
+      Front: mitochondrion
+      Back: 线粒体

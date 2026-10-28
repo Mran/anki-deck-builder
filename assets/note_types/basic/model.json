@@ -1,0 +1,2 @@
+{"type": "basic", "fields": ["Front", "Back", "Extra", "Source"],
+ "templates": [{"name": "[[t:name_basic]]", "front": "front.html", "back": "back.html"}]}

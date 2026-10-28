@@ -1,0 +1,2 @@
+{"type": "mcq", "fields": ["Question", "Options", "Answer", "Explanation", "Source", "Shuffle"],
+ "templates": [{"name": "[[t:name_mcq]]", "front": "front.html", "back": "back.html"}]}

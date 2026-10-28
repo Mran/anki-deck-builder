@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: txt-to-cloze-truefalse-paper
+expected_outcome: |
+  An importable .apkg with cloze and true/false cards on the Tang dynasty notes, false statements drawn from the notes' listed misconceptions, styled with a warm paper/serif bookish look in both day and night mode.
+context:
+  scaffold_script: place-files.sh

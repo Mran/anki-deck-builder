@@ -1,0 +1,46 @@
+/* nord — 冷静的北欧蓝灰配色,夜间模式优先设计;适合编程、理工科、长时间复习 */
+.card {
+  --bg: #e5e9f0;
+  --surface: #eceff4;
+  --surface-2: #e1e6ee;
+  --text: #2e3440;
+  --text-muted: #5e6a80;
+  --border: #d3d9e3;
+  --accent: #5e81ac;
+  --accent-soft: #d8e2ef;
+  --accent-contrast: #eceff4;
+  --correct: #4f7a3a;
+  --correct-soft: #dde8d3;
+  --wrong: #a3404a;
+  --wrong-soft: #f0d9db;
+  --cloze: #3b6593;
+  --cloze-soft: #d5e1ee;
+  --font-body: "Inter", -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-heading: var(--font-body);
+  --font-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
+  --font-size: 19px;
+  --line-height: 1.65;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 10px rgba(46,52,64,.08);
+  --max-width: 700px;
+  --gap: 16px;
+}
+.card.nightMode, .nightMode .card, .card.night_mode, .night_mode .card {
+  --bg: #242933;
+  --surface: #2e3440;
+  --surface-2: #3b4252;
+  --text: #eceff4;
+  --text-muted: #a3adc2;
+  --border: #434c5e;
+  --accent: #88c0d0;
+  --accent-soft: #34485a;
+  --accent-contrast: #242933;
+  --correct: #a3be8c;
+  --correct-soft: #34402f;
+  --wrong: #e08b93;
+  --wrong-soft: #4a3036;
+  --cloze: #8fbcbb;
+  --cloze-soft: #33454b;
+  --shadow: none;
+}

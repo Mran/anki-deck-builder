@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: restyle-and-add-truefalse
+expected_outcome: |
+  The existing project is restyled to a dark neon cyberpunk look and gains one true/false card per basic card's knowledge point, while keeping the project uid and existing card ids unchanged so re-importing preserves review history; the design log records the change and an updated .apkg is built.
+context:
+  scaffold_script: place-files.sh

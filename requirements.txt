@@ -1,0 +1,8 @@
+# required
+genanki>=0.13
+pyyaml>=6.0
+# optional, per material type
+pypdf>=4.0
+python-docx>=1.1
+python-pptx>=0.6.23
+beautifulsoup4>=4.12

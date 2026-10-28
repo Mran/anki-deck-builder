@@ -1,0 +1,269 @@
+/* ankiskill base.css — 结构样式。只引用设计变量(见 references/styling.md),不写死颜色与字体。 */
+
+.card {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: left;
+  margin: 0;
+  padding: 24px 16px 40px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.ak {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: calc(var(--gap) * 1.5) calc(var(--gap) * 1.75);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* 题型小标签 */
+.ak-kind {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: .62em;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: var(--gap);
+}
+
+.ak-q {
+  font-family: var(--font-heading);
+  font-size: 1.15em;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ak-divider {
+  height: 1px;
+  background: var(--border);
+  margin: calc(var(--gap) * 1.25) 0;
+  border: 0;
+}
+
+.ak-a {
+  font-size: 1.05em;
+}
+
+.ak-a-big {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.ak-extra {
+  margin-top: var(--gap);
+  padding: 12px 16px;
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: .86em;
+  color: var(--text);
+}
+
+.ak-extra-label {
+  display: block;
+  font-size: .78em;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  letter-spacing: .04em;
+}
+
+.ak-source {
+  margin-top: var(--gap);
+  font-size: .7em;
+  color: var(--text-muted);
+  text-align: right;
+}
+.ak-source::before { content: "— "; }
+
+.ak-hint {
+  font-size: .72em;
+  color: var(--text-muted);
+  margin: 10px 0 0;
+}
+
+/* 内容元素 */
+.ak b, .ak strong { color: var(--accent); font-weight: 700; }
+.ak code {
+  font-family: var(--font-mono);
+  font-size: .88em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 6px;
+}
+.ak pre {
+  font-family: var(--font-mono);
+  font-size: .8em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.ak pre code { background: none; border: 0; padding: 0; }
+.ak img { max-width: 100%; height: auto; border-radius: var(--radius-sm); }
+.ak ul, .ak ol { padding-left: 1.4em; margin: .4em 0; }
+.ak li { margin: .2em 0; }
+.ak a { color: var(--accent); }
+.ak table { border-collapse: collapse; font-size: .85em; margin: .5em 0; }
+.ak th, .ak td { border: 1px solid var(--border); padding: 6px 10px; }
+.ak th { background: var(--surface-2); }
+
+/* 填空 */
+.cloze {
+  color: var(--cloze);
+  background: var(--cloze-soft);
+  font-weight: 700;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+.cloze-inactive { color: inherit; background: none; font-weight: inherit; }
+.ak-cloze .ak-q { font-weight: 500; line-height: 1.75; }
+
+/* 选择题 */
+.ak-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: calc(var(--gap) * 1.25);
+}
+.ak-opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  background: var(--surface-2);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: .95em;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.ak-opt:hover { border-color: var(--border); }
+.ak-opt-text { flex: 1; padding-top: 2px; }
+.ak-letter {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: .78em;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+}
+.ak-opt.is-selected { border-color: var(--accent); background: var(--accent-soft); }
+.ak-opt.is-selected .ak-letter { background: var(--accent); border-color: var(--accent); color: var(--accent-contrast); }
+
+.ak-opts.is-revealed .ak-opt { cursor: default; }
+.ak-opt.is-correct { border-color: var(--correct); background: var(--correct-soft); }
+.ak-opt.is-correct .ak-letter { background: var(--correct); border-color: var(--correct); color: #fff; }
+.ak-opt.is-wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+.ak-opt.is-wrong .ak-letter { background: var(--wrong); border-color: var(--wrong); color: #fff; }
+.ak-opt.is-missed { border-style: dashed; border-color: var(--correct); }
+.ak-opt.is-correct .ak-opt-text::after { content: "  ✓"; color: var(--correct); font-weight: 700; }
+.ak-opt.is-wrong .ak-opt-text::after { content: "  ✗"; color: var(--wrong); font-weight: 700; }
+
+/* 判断题 */
+.ak-statement { font-size: 1.1em; font-weight: 600; line-height: 1.6; }
+.ak-tf-btns { display: flex; gap: 12px; margin-top: calc(var(--gap) * 1.25); }
+.ak-tf-btn {
+  flex: 1;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 1em;
+  font-weight: 700;
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.ak-tf-btn .ak-tf-icon { font-size: 1.2em; }
+.ak-tf-btn.is-selected { border-color: var(--accent); background: var(--accent-soft); }
+.ak-tf-btn.is-correct { border-color: var(--correct); background: var(--correct-soft); color: var(--correct); }
+.ak-tf-btn.is-wrong { border-color: var(--wrong); background: var(--wrong-soft); color: var(--wrong); }
+.ak-tf-btns.is-revealed .ak-tf-btn { cursor: default; }
+
+/* 判定横幅 */
+.ak-verdict {
+  display: none;
+  margin-top: var(--gap);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: .9em;
+}
+.ak-verdict.is-good { display: block; color: var(--correct); background: var(--correct-soft); }
+.ak-verdict.is-bad { display: block; color: var(--wrong); background: var(--wrong-soft); }
+.ak-verdict.is-good::before { content: "✓  "; }
+.ak-verdict.is-bad::before { content: "✗  "; }
+
+/* 输入答案 */
+.ak-type input#typeans {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: calc(var(--gap) * 1.25);
+  padding: 12px 14px;
+  font-family: var(--font-mono);
+  font-size: 1em;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+.ak-type input#typeans:focus { border-color: var(--accent); }
+.ak-type code#typeans {
+  display: block;
+  margin-top: var(--gap);
+  padding: 12px 14px;
+  font-family: var(--font-mono);
+  background: var(--surface-2);
+  border: 0;
+  border-radius: var(--radius-sm);
+  line-height: 1.8;
+}
+.typeGood { color: var(--correct); background: var(--correct-soft); }
+.typeBad { color: var(--wrong); background: var(--wrong-soft); text-decoration: line-through; }
+.typeMissed { color: var(--text-muted); background: var(--surface); border-bottom: 2px dashed var(--wrong); }
+
+/* 夜间模式下不反色的图片 */
+.nightMode img.ak-noinvert, .night_mode img.ak-noinvert { filter: none !important; }
+
+/* 手机 */
+@media (max-width: 480px) {
+  .card { padding: 12px 8px 32px; font-size: calc(var(--font-size) * .9); }
+  .ak { padding: var(--gap) calc(var(--gap) * 1.1); border-radius: calc(var(--radius) * .8); }
+}

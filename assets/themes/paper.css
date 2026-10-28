@@ -1,0 +1,46 @@
+/* paper — 暖米色纸张与衬线字体,书卷气;适合文史、语言、阅读类材料 */
+.card {
+  --bg: #efe9dd;
+  --surface: #fbf8f1;
+  --surface-2: #f3eee2;
+  --text: #2b2620;
+  --text-muted: #857a6a;
+  --border: #e2d9c6;
+  --accent: #9a4a2f;
+  --accent-soft: #f3e3d6;
+  --accent-contrast: #fffaf3;
+  --correct: #4d7c3a;
+  --correct-soft: #e6eedb;
+  --wrong: #a8322d;
+  --wrong-soft: #f6dfd9;
+  --cloze: #8a3c22;
+  --cloze-soft: #f1ddcb;
+  --font-body: "Iowan Old Style", "Palatino Linotype", Georgia, "Songti SC", "STSong", "Noto Serif CJK SC", "SimSun", serif;
+  --font-heading: var(--font-body);
+  --font-mono: "SF Mono", Consolas, monospace;
+  --font-size: 21px;
+  --line-height: 1.75;
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 0 1px 0 rgba(90,70,40,.08), 0 10px 30px -12px rgba(90,70,40,.25);
+  --max-width: 640px;
+  --gap: 18px;
+}
+.card.nightMode, .nightMode .card, .card.night_mode, .night_mode .card {
+  --bg: #1b1916;
+  --surface: #24211d;
+  --surface-2: #2e2a25;
+  --text: #e8e0d2;
+  --text-muted: #a49784;
+  --border: #3a352e;
+  --accent: #e0956f;
+  --accent-soft: #3e2a20;
+  --accent-contrast: #1b1310;
+  --correct: #9cc485;
+  --correct-soft: #26301f;
+  --wrong: #f08a7e;
+  --wrong-soft: #3d2320;
+  --cloze: #f0aa82;
+  --cloze-soft: #3e2a20;
+  --shadow: none;
+}

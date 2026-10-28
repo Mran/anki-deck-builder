@@ -1,0 +1,21 @@
+points:
+  - id: k001
+    topic: 细胞器
+    fact: 线粒体是细胞进行有氧呼吸的主要场所,被称为"细胞的动力工厂"。
+    detail: 具有双层膜,内膜向内折叠形成嵴,增大了酶的附着面积。
+    confusables: [叶绿体, 核糖体, 高尔基体]
+    misconceptions: ["所有细胞都有线粒体"]
+    source: sources/cell.md#第三章
+  - id: k002
+    topic: 细胞器
+    fact: 光合作用光反应在类囊体薄膜上进行,暗反应在叶绿体基质中进行。
+    source: sources/cell-2.md#第1页
+  - id: k003
+    topic: 细胞器
+    fact: 含有 DNA 的细胞器是线粒体和叶绿体。
+    confusables: [核糖体, 内质网]
+    source: sources/cell.md
+  - id: k004
+    topic: 术语
+    fact: mitochondrion(复数 mitochondria)是线粒体的英文。
+    source: sources/cell.md
